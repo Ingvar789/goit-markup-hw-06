@@ -698,9 +698,8 @@ background-position: center;
   padding-top: 72px;
   padding-bottom: 94px;
 }
-
-.footer-form-mail li:not(:last-child) {
-  margin-right: 12px;
+.footer-thumb {
+  display: flex;
 }
 
 .footer-input {
@@ -720,7 +719,7 @@ background-position: center;
 .footer-button {
   display: flex;
   align-items: center;
-  margin: 0 auto;
+  margin: 0 auto 0 12px;
   text-align: center;
   width: 200px;
   padding: 10px 28px;
@@ -819,11 +818,15 @@ background-position: center;
 }
 .form-field {
   position: relative;
-  display: inline-block;
+  display: flex;
   flex-direction: column;
+  margin-bottom: 10px;
   width: 100%;
   color: var(--text-title-color);
+}
 
+.form-comment {
+  margin-bottom: 0;
 }
 .form-field:focus-within>.modal-input {
   border-color: var(--accent-color);
@@ -838,10 +841,12 @@ background-position: center;
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: var(--text-main-color);
+  padding: 0;
   margin: 0 0 4px 0;
 }
 
-.form-list {
+.modal-forms {
+  display: flex;
   flex-direction: column;
   margin: 0 0 20px 0;
 }
@@ -920,11 +925,15 @@ cursor: pointer;
   line-height: 1.71;
   color: var(--text-main-color);
 }
+
 .checkbox {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   position: absolute;
+}
+.policy:focus {
+  cursor: pointer;
 }
 .checkbox-icon {
   margin: 0;
@@ -944,6 +953,9 @@ cursor: pointer;
   transition: background-image 250ms var(--timing-function);
 }
 
+.checkbox-reference {
+  color: var(--accent-color);
+}
 .modal-button {
   margin: 0 auto;
   text-align: center;

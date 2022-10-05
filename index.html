@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:wght@400;500;700&display=swap"
     rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
@@ -62,8 +62,8 @@
             <div class="container hero">
                 <div class="">
                     <h1 class="main-inscription">
-                        <div>Ефективні рішення для</div>
-                        <div>вашого бізнесу</div>
+                        <span>Ефективні рішення для</span>
+                        <span>вашого бізнесу</span>
                     </h1>
                     <button type="button" class="main-button" data-modal-open>Замовити послугу</button>
                 </div>
@@ -401,17 +401,11 @@
             <div class="footer-form">
                 <h3 class="title-footer">Підпишіться на розсилку</h3>
                 <form class="footer-form-mail">
-                    <ul class="list">
-                        <li class="list">
-                            <label class="label-footer">
+                        <div class="footer-thumb">
                             <input type="email" name="email" class="footer-input" placeholder="E-mail">
-                            </label>
-                        </li>
-                        <li class="list">
                             <button type="submit" class="footer-button">Підписатися
                             </button>
-                        </li>
-                    </ul>
+                       </div>
                 </form>
             </div>
             </div>
@@ -429,8 +423,7 @@
                     <div class="modal-main">
                         <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
                         <form class="form">
-                            <ul class="list form-list">
-                                <li class="list">
+                            <div class="modal-forms">
                                     <label class="form-field">
                                        <span class="form-label">Ім'я</span> 
                                         <input type="text" class="modal-input" name="name" required>
@@ -439,8 +432,6 @@
                                             </use>
                                         </svg>
                                     </label>
-                                </li>
-                                <li class="list">
                                 <label class="form-field">
                                     <span class="form-label">Телефон</span>
                                     <input type="text" class="modal-input" name="tel" required>
@@ -449,8 +440,6 @@
                                         </use>
                                     </svg>
                                 </label>
-                                </li>
-                                <li class="list">
                                 <label class="form-field">
                                     <span class="form-label">Пошта</span>
                                     <input type="text" class="modal-input" name="email" required>
@@ -459,13 +448,11 @@
                                         </use>
                                     </svg>
                                 </label>
-                                </li>
-                                <li class="list">
-                                    <label class="form-field"><span class="form-label">Коментар</span>
+
+                                <label class="form-field form-comment"><span class="form-label">Коментар</span>
                                     <textarea placeholder="Введіть текст" class="comment" rows="10"></textarea>
                                         </label>
-                                </li>
-                            </ul>
+                            </div>
                                 <label class="policy">
                                     <input class="checkbox" type="checkbox" name="policy">
                                     <span class="checkbox-icon"></span>
