@@ -219,6 +219,7 @@ align-items:stretch;
 
 .hero {
   display: flex;
+  flex-direction: column;
   height: 600px;
   text-align: center;
   justify-content: center;
@@ -241,15 +242,21 @@ align-items:stretch;
   background-size: cover;
 }
 .main-inscription {
-  display: block;
+  display: flex;
+  flex-direction: column;
   margin-top: 0;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.37;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--secondary-color);
+}
+.main-inscription__item {
+  display: block;
+  margin: 0;
+  padding: 0;
 }
 
 /* головна кнопка */
@@ -925,15 +932,11 @@ cursor: pointer;
   line-height: 1.71;
   color: var(--text-main-color);
 }
-
 .checkbox {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   position: absolute;
-}
-.policy:focus {
-  cursor: pointer;
 }
 .checkbox-icon {
   margin: 0;
@@ -944,9 +947,12 @@ cursor: pointer;
   background-image: url('../images/icon-checkbox-border.svg');
   outline: none;
 }
-.checkbox:checked + .checkbox-icon {
+.checkbox-icon:focus{
+ outline: 2px solid black;
+}
+.checkbox:checked+.checkbox-icon {
   background-image: url('../images/icon-checkbox.svg');
-  background-size:contain;
+  background-size: contain;
   background-repeat: no-repeat;
   background-origin: border-box;
 

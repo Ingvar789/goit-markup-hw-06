@@ -60,13 +60,11 @@
         
         <section class="grey-section hero-background">
             <div class="container hero">
-                <div class="">
                     <h1 class="main-inscription">
-                        <span>Ефективні рішення для</span>
-                        <span>вашого бізнесу</span>
+                        <span class="main-inscription__item">Ефективні рішення для</span>
+                        <span class="main-inscription__item">вашого бізнесу</span>
                     </h1>
                     <button type="button" class="main-button" data-modal-open>Замовити послугу</button>
-                </div>
             </div>
         </section>
 
@@ -454,10 +452,11 @@
                                         </label>
                             </div>
                                 <label class="policy">
-                                    <input class="checkbox" type="checkbox" name="policy">
-                                    <span class="checkbox-icon"></span>
-                                    <span class="checkbox-description">Погоджуюся з розсилкою та приймаю</span>
+                                    <input class="checkbox" type="checkbox" name="policy" tabindex="-1">
+                                    <span class="checkbox-icon" tabindex="0"></span>
+                                    <span class="checkbox-description">Погоджуюся з розсилкою та приймаю
                                     <a href="" class="checkbox-reference">Умови договору</a>
+                                    </span>
                                 </label>
                             <button type="submit" class="modal-button">Відправити</button>
                         </form>
